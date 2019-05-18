@@ -1,0 +1,199 @@
+/*
+Colours used
+cyan - #3EE0D6
+blue - #2E3AAA
+offwhite - #F0F4F3
+*/
+
+/* General */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+body {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background: #F0F4F3;
+}
+
+body #bt-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+body #tp-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h4 {
+  color: #2E3AAA;
+}
+/* Header */
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: #2E3AAA;
+  padding: 0 20px;
+  border-bottom: #3EE0D6 solid 3px;
+}
+
+header h1 {
+  flex: 1 0 100px;
+  color: #3EE0D6;
+}
+
+nav {
+  flex: 1 0 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+}
+
+nav a {
+  flex: 1 0 150px;
+  color: #fff;
+  text-align: center;
+}
+
+.current {
+  color: #3EE0D6;
+}
+
+/* Main Body */
+
+#main1, #main2 {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.side1 {
+  background: url('../img/svg/bg-landscape-90.svg');
+  background-size: cover;
+  color: white;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  justify-content: center;
+}
+
+.side2 {
+  flex: 3;
+  background: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.side2 form {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section#cars {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: space-evenly;
+  justify-content: space-around;
+}
+
+div.product {
+  border: 3px solid #2E3AAA;
+  margin-top: 10px;
+  background: white;
+  padding: 0px 5px;
+}
+
+div.product img {
+  width: 250px;
+}
+
+div#product-details {
+  display: flex;
+  flex-flow: column wrap;
+  margin-top: 10px;
+  align-items: center;
+}
+
+div#product-details img {
+  max-width: 800px;
+}
+
+input {
+  margin: 10px;
+  background: #ddd;
+  border: none;
+  border-radius: 2px;
+  padding: 5px;
+  width: 300px;
+  flex: 1 0 25px;
+}
+
+button {
+  border: 1px solid #2E3AAA;
+  border-radius: 100px;
+  color: white;
+  width: 100px;
+  cursor: pointer;
+  padding: 8px 15px;
+  text-transform: uppercase;
+}
+
+button.shaded {
+  border-color: #2E3AAA;
+  background: #2E3AAA;
+}
+
+button.transparent {
+  border-color: white;
+  background: transparent;
+}
+
+#main2 {
+  display: none;
+}
+
+/* Footer */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  color: #ffffff;
+  background-color: #2E3AAA;
+  text-align: center;
+}
+
+#footerSpace {
+  height: 50px;
+  margin: 0;
+  padding: 5px 50px 5px 10px;
+}
