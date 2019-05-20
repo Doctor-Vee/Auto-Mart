@@ -129,7 +129,7 @@ section#cars {
 div.product {
   border: 3px solid #2E3AAA;
   margin-top: 10px;
-  background: white;
+  background: linear-gradient(238.74deg, #FFFFFF 0.79%, rgba(62, 224, 214, 0.3) 51.43%, #FFFFFF 100%);
   padding: 0px 5px;
 }
 
@@ -142,6 +142,8 @@ div#product-details {
   flex-flow: column wrap;
   margin-top: 10px;
   align-items: center;
+  padding: 20px;
+  background: linear-gradient(238.74deg, rgba(46, 58, 170, 0.3) 8.81%, rgba(62, 224, 214, 0.3) 35.41%, rgba(46, 58, 170, 0.3) 60.24%, rgba(62, 224, 214, 0.3) 81.4%);
 }
 
 div#product-details img {
