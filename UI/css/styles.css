@@ -16,14 +16,14 @@ body {
 }
 
 body #bt-left {
-  position: absolute;
-  bottom: 0;
+  position: fixed;
+  bottom: 40px;
   left: 0;
   z-index: -1;
 }
 
 body #tp-right {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   z-index: -1;
@@ -43,13 +43,14 @@ a {
 h4 {
   color: #2E3AAA;
 }
+
 /* Header */
 
 header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background: #2E3AAA;
+  background: linear-gradient(24.36deg, #2E3AAA 21.16%, #3EE0D6 110.53%);
   padding: 0 20px;
   border-bottom: #3EE0D6 solid 3px;
 }
@@ -73,7 +74,8 @@ nav a {
 }
 
 .current {
-  color: #3EE0D6;
+  color: #F0F4F3;
+  font-weight: 700;
 }
 
 /* Main Body */
@@ -188,7 +190,7 @@ footer {
   width: 100%;
   padding: 10px;
   color: #ffffff;
-  background-color: #2E3AAA;
+  background: linear-gradient(24.59deg, #3EE0D6 -12.75%, #2E3AAA 81.51%);
   text-align: center;
 }
 
