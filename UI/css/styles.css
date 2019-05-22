@@ -138,7 +138,7 @@ form#sell {
   border-radius: 3px;
 }
 
-label {
+form div label {
   margin-right: 30px;
 }
 
@@ -151,10 +151,21 @@ input, select, textarea {
   margin-bottom: 20px;
 }
 
-input[type=radio] {
+input[type="radio"], input[type="checkbox"]{
   width: inherit;
 }
 
+input[type="checkbox"]{
+width: 20px;
+height: 20px;
+}
+
+label[class="sold"]{
+  display: block;
+  overflow: hidden;
+  text-align: right;
+  margin-top: 5px;
+}
 
 section#cars {
   display: flex;
