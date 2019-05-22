@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Auto Mart | Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Online marketplace for automobiles">
+  <meta name="keywords" content="automobiles, buy cars, sell cars, online car sales">
+  <meta name="author" content="Victor CHINEWUBEZE">
+  <link rel="stylesheet" type="text/css" media="screen" href="../css/styles.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="../img/icon.jpg">
+</head>
+
+
+<body>
+  <img src="../img/svg/jeep-bottom-left-gray.svg" id="bt-left">
+  <img src="../img/svg/car-top-right-gray.svg" id="tp-right">
+
+  <header>
+    <h1>Auto Mart</h1>
+    <nav>
+      <a href="userdashboard.html">Home</a>
+      <a href="#">Notifications</a>
+      <a href="# class=" current"">Sell</a>
+    </nav>
+  </header>
+
+  <section id="sellSection" class="container">
+    <h2>Post your AD</h2>
+
+    <form id="sell" action="/sell">
+      <div>
+        <p>State</p>
+        <label for="new"><input type="radio" name="state" value="1" required>New</label>
+        <label for="used"><input type="radio" name="state" value="2">Used</label>
+      </div>
+      <div>
+        <p>Price</p>
+        <input type="number" name="price" placeholder="e.g. 5,200,000" required>
+      </div>
+      <div>
+        <p>Manufacturer</p>
+        <input type="text" name="manufacturer" placeholder="e.g. Toyota" required>
+      </div>
+      <div>
+        <p>Model</p>
+        <input type="text" name="model" placeholder="e.g. Camry 2019" required>
+      </div>
+      <div>
+        <p>Body Type</p>
+        <select name="bodyType" id="id" required>
+          <option value="" disabled selected>Choose one...</option>
+          <option value="1">Car</option>
+          <option value="2">Truck</option>
+          <option value="3">Van/Minivan</option>
+          <option value="4">Trailer</option>
+        </select>
+      </div>
+      <div>
+        <p>Photo URL</p>
+        <input type="text" name="state" placeholder="Insert Photo URL..." required>
+      </div>
+
+      <div>
+          <p>Additional Info</p>
+          <textarea placeholder="Additional Info..." name="addInfo"></textarea>
+        </div>
+      <button class="shaded">Post</button>
+    </form>
+
+  </section>
+
+  <div id="footerSpace"></div>
+  <footer>
+    Auto Mart, Copyright &copy; 2019
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
