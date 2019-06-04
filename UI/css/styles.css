@@ -9,7 +9,7 @@ offwhite - #F0F4F3
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 body {
-  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font: 0.75rem/1.5 Montserrat, Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0;
   background: #F0F4F3;
@@ -85,12 +85,25 @@ nav a {
 
 /* Main Body */
 
+#loginCase {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 #main1, #main2 {
   display: flex;
   flex-wrap: wrap;
   border-radius: 5px;
   margin-top: 20px;
 }
+
+#main2 {
+  display: none;
+}
+
 
 .side1 {
   background: linear-gradient(180deg, rgba(62, 224, 214, 0.9) 0%, rgba(46, 58, 170, 0.9) 73.45%, rgba(46, 58, 170, 0.9) 89.58%);
@@ -233,9 +246,6 @@ button.transparent {
   background: transparent;
 }
 
-#main2 {
-  display: none;
-}
 
 /* Footer */
 
