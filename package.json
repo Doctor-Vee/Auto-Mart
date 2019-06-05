@@ -1,0 +1,49 @@
+{
+  "name": "auto-mart",
+  "version": "1.0.0",
+  "description": "A platform where people can buy and sell cars",
+  "main": "app.js",
+  "scripts": {
+    "test": "nyc mocha --require @babel/register ./Server/test --exit",
+    "start": "babel-node app",
+    "build": "babel app.js -d build",
+    "db-migrate": "babel-node ./Server/models/index",
+    "db-populate": "babel-node ./Server/seeds/index.seeds",
+    "dev": "nodemon --exec babel-node app",
+    "coverage": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Victor-Chinewubeze/Auto-Mart.git"
+  },
+  "keywords": [
+    "automobiles",
+    "buy",
+    "cars",
+    "sell",
+    "online",
+    "car",
+    "sales"
+  ],
+  "author": "Victor CHINEWUBEZE",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Victor-Chinewubeze/Auto-Mart/issues"
+  },
+  "homepage": "https://github.com/Victor-Chinewubeze/Auto-Mart#readme",
+  "dependencies": {
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/register": "^7.4.4",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.3"
+  }
+}
