@@ -18,7 +18,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.get('/', (req, res) => res.status(200).send({
+  status: 200,
   message: 'Welcome to AutoMart',
 }));
 
 app.listen(port, () => console.log(`Server running on port ${port}`));
+
+export default app;
